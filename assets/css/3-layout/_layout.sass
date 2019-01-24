@@ -102,9 +102,7 @@
 
 .bg-content
   max-width: 90%
-  -webkit-box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.75)
-  -moz-box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.75)
-  box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.75)
+  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.3)
   margin: 0 auto
   border-radius: 25px 25px 0 0
   margin-top: -55px
@@ -176,15 +174,11 @@ h3.title
   padding: 0 20px
   background-color: #fff
   margin-bottom: 60px
-  -webkit-box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.75)
-  -moz-box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.75)
-  box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.75)
+  box-shadow: 0px 0px 2px 1px rgba(105, 105, 105, 0.15)
 
 .product-img
   height: 350px
-  -webkit-box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.75)
-  -moz-box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.75)
-  box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.75)
+  box-shadow: 0px 0px 45px 1px rgba(0, 0, 0, 0.15)
   margin: 0 auto
   transform: translateY(-40px)
   & img
@@ -195,6 +189,7 @@ h3.title
 .product-title
   color: #2d3359
   font-family: 'Articulate'
+  padding-top: 20px
 
 .product-text
   color: #b2b2b2
@@ -210,8 +205,6 @@ h3.title
 
 .promo-banner
   height: 190px
-  -webkit-box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.75)
-  -moz-box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.75)
   box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.75)
   & img
     height: 100%
@@ -238,6 +231,7 @@ h3.title
 
 .distributor-img
   height: 190px
+  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
   & img 
     object-fit: cover
     height: 100%
@@ -270,8 +264,10 @@ h3.title
 
 .form-box
   background-color: #fff
+  border-radius: 7px
   margin: 50px 40px
   padding: 0 25px
+  display: inline-block
 
 .form-inline .form-control
   width: 100%
@@ -284,10 +280,11 @@ h3.title
   height: 70px
   width: 100%
   border-radius: 5px
+  box-shadow: 0px 5px 15px -2px rgba(0, 0, 0, 0.75)
   transform: translateY(-40%)
 
 .form-title
-  padding-top: 10px
+  padding-top: 15px
 
 .form-inline
   justify-content: center
@@ -298,6 +295,7 @@ h3.title
 
 .form-control
   border: none
+  border-radius: 0
   border-bottom: 1px solid #bebebe
   &:focus
     box-shadow: none
@@ -310,6 +308,7 @@ h3.title
   height: 100px
   border: none
   color: #7c848b
+  margin-top: 2rem
   border-bottom: 1px solid #bebebe
 // End Contact Us
 
@@ -336,6 +335,7 @@ h3.title
 .img-instagram
   height: 56px
   width: 56px
+  margin-top: 15px
   margin-right: 10px
   list-style: none
   display: inline-flex
@@ -347,6 +347,11 @@ h3.title
 
 
 // Responsive Start
+@media (max-width: 1199px)
+  .product-title
+    font-size: 24px
+    padding-top: 5px
+
 @media (max-width: 991px)
   .slider
     height: 50vh
@@ -373,7 +378,10 @@ h3.title
     height: 200px
 
   .product-text
-    font-size: 12px
+    font-size: 10px
+
+  .product-title
+    font-size: 14px
 
   .promo-banner
     height: 120px
@@ -381,12 +389,15 @@ h3.title
   .promo-title
     font-size: 12px
 
+  .product-title
+    padding-top: 20px
+
   .form-box
     margin: 50px 0
   
   .nav-item a,
   .dropdown-item
-    border-bottom: 1px solid #fff
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
 
 @media (max-width: 767px)
   .slider
@@ -430,6 +441,9 @@ h3.title
   .dropdown-item
     border-bottom: 1px solid #fff
 
+  .product-title
+    padding-top: 20px
+
 @media (max-width: 575px)
   .bantext
     top: 70%
@@ -454,10 +468,14 @@ h3.title
   .product-img
     height: 300px
 
+  .bg-product
+    margin-top: 60px
+
   .text
     padding-left: 0
     padding-right: 0
     font-size: 16px
+    padding-bottom: 2rem
 
   .form-title
     padding-top: 20px
@@ -469,3 +487,15 @@ h3.title
   .nav-item a,
   .dropdown-item
     border-bottom: 1px solid #fff
+
+  #pwd
+    margin-top: 2rem
+
+  .main-title
+    font-size: 24px
+
+  .pb3
+    padding-bottom: 1rem
+
+  .product-title
+    padding-top: 20px
