@@ -1,499 +1,60 @@
-.slider
-  height: 100vh
-  img 
-    width: 100%
-    height: 100%
-    object-fit: cover
-    object-position: center center
-.slick-list, .slick-track
-  height: 100%
+.bgblue
+  background-color: blue
+  margin-top: 67px
+  position: fixed
+  width : 100%
+  height: 500px
+  z-index: 9
 
-.slick-next
-  position: absolute
-  display: block
-  top: 50%
-  right: 0
-
-.slick-prev
-  position: absolute
-  display: block
-  top: 50%
-  left: 0
-  z-index: 99
-
-.slick-dots
-  display: flex
-  position: absolute
-  bottom: 1%
-  left: 50%
-  transform: translateX(-50%)
-  & li button
-    font-size: 0
-    line-height: 0
-    display: block
-    width: 20px
-    height: 20px
-    padding: 5px
-    cursor: pointer
-    color: transparent
-    border: 0
-    outline: none
-    background: transparent
-
-.next
-  width: 60px
-  height: 60px
-  background-color: rgba(0, 0, 0, 0.33)
-  position: absolute
-  right: 20px
-  top: 50%
-  transform: translateY(-50%)
-  border-radius: 60px
-  cursor: pointer
-  &:before
-    content: ""
-    width: 20px
-    height: 20px
-    border-bottom: 5px solid #fff
-    border-right: 5px solid #fff
-    position: absolute
-    top: 50%
-    right: 40%
-    transform: translateY(-50%) rotate(-45deg)
-  &:hover
-    background-color: rgba(0, 0, 0, 0.55)
-
-.prev
-  width: 60px
-  height: 60px
-  background-color: rgba(0, 0, 0, 0.33)
-  position: absolute
-  left: 20px
-  top: 50%
-  transform: translateY(-50%)
-  border-radius: 60px
-  cursor: pointer
-  z-index: 1
-  &:before
-    content: ""
-    width: 20px
-    height: 20px
-    border-bottom: 5px solid #fff
-    border-left: 5px solid #fff
-    position: absolute
-    top: 50%
-    left: 40%
-    transform: translateY(-50%) rotate(45deg)
-  &:hover
-    background-color: rgba(0, 0, 0, 0.55)
-
-.banner
+.bgred
+  background-color: red
   position: relative
+  margin-top: 67px
+  width : 100%
+  height: 2000px
 
-.bantext
-  color: #fff
-  position: absolute
-  left: 17%
-  top: 40%
-  z-index: 1
-// Slider End
-
-.bg-content
-  max-width: 90%
-  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.3)
-  margin: 0 auto
-  border-radius: 25px 25px 0 0
-  margin-top: -55px
+.bggreen
+  background-color: green
   position: relative
-  background-color: #fff
-
-h3.title
-  text-align: center
-  color: #b2b2b2
-  width: 60%
-  margin: 0 auto
-  padding-top: 3rem
-  padding-bottom: 3rem
-
-.icontitle
-  color: #2d3359
-  text-align: center
-
-.icontext
-  text-align: center
-  color: #adadad
-
-.img-icon
-  width: 150px
-  height: 150px
-  margin: 0 auto
-
-.bgsecban
-  height: 620px
-  width: auto
-  margin-top: 126px
-  background-color: #000
-  overflow: hidden
-  position: relative
-
-.secban
-  opacity: 0.5
-
-.secban-title
-  position: absolute
-  top: 25%
-  left: 10%
-  color: #fff 
-  width: 50%
-
-.secban-item img
-  position: absolute
-  top: 60%
-  left: 50%
-  height: 30%
-// Secondary Banner End
-
-.fullcontain
-  background-color: #eeeced
-
-.content-container
-  width: 85%
-
-.text
-  color: #b2b2b2
-  padding-left: 150px
-  padding-right: 150px
-  text-align: center
-  margin: 0 auto
-  padding-bottom: 6rem
-
-.bg-product
-  text-align: center
-  padding: 0 20px
-  background-color: #fff
-  margin-bottom: 60px
-  box-shadow: 0px 0px 2px 1px rgba(105, 105, 105, 0.15)
-
-.product-img
-  height: 350px
-  box-shadow: 0px 0px 45px 1px rgba(0, 0, 0, 0.15)
-  margin: 0 auto
-  transform: translateY(-40px)
-  & img
-    height: 100%
-    width: 100%
-    object-fit: cover
-
-.product-title
-  color: #2d3359
-  font-family: 'Articulate'
-  padding-top: 20px
-
-.product-text
-  color: #b2b2b2
-
-.btn-danger
-  background-color: #d43d22
-  border: 0
-  border-radius: 3px
-  padding: 5px 25px
-  font-family: 'hb'
-  color: #fff
-  margin-bottom: 30px
-
-.promo-banner
-  height: 190px
-  box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.75)
-  & img
-    height: 100%
-    width: 100%
-    border-radius: 3px
-    object-fit: cover
-
-.label-red
-    font-size: 10px
-    padding-top: 20px
-    color: #eb3975
-
-.label-blue
-  font-size: 10px
-  padding-top: 20px
-  color: #1ec2d8
-
-.promo-text
-  font-size: 12px
-  color: #b2b2b2
-
-.promo-title
-  color: #2d3359
-
-.distributor-img
-  height: 190px
-  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
-  & img 
-    object-fit: cover
-    height: 100%
-    width: 100%
-// End Middle
-
-.bg-contactus
-  padding-top: 3rem
-  background-image: url(../img/darkcity.jpg)
-  background-repeat: no-repeat
-  background-attachment: fixed
-  background-size: cover
-
-.bottom-title
-  color: #fff
-  font-family: 'Articulate'
-
-.bottom-text1
-  color: #fff
-  font-family: 'hl'
-
-.bottom-text2
-  color: #fff 
-  font-family: 'hl'
-  font-size: 12px
-  margin-left: 1.5rem
-
-.bottom-title img
-  height: 20px
-
-.form-box
-  background-color: #fff
-  border-radius: 7px
-  margin: 50px 40px
-  padding: 0 25px
-  display: inline-block
-
-.form-inline .form-control
-  width: 100%
-
-.form-title-box
-  padding: 0 20px
-  background-color: #d43d22
-  color: #fff
-  text-align: center
-  height: 70px
-  width: 100%
-  border-radius: 5px
-  box-shadow: 0px 5px 15px -2px rgba(0, 0, 0, 0.75)
-  transform: translateY(-40%)
-
-.form-title
-  padding-top: 15px
-
-.form-inline
-  justify-content: center
-  padding-top: 1rem
-
-.form-top
-  padding: 0 7px
-
-.form-control
-  border: none
-  border-radius: 0
-  border-bottom: 1px solid #bebebe
-  &:focus
-    box-shadow: none
-
-.form-group
-  padding-top: 2rem
-
-.text-box
-  width: 100%
-  height: 100px
-  border: none
-  color: #7c848b
-  margin-top: 2rem
-  border-bottom: 1px solid #bebebe
-// End Contact Us
-
-.bgfooter
-  padding-top: 3rem
-  background-image: url(../img/bgfooter.jpg)
-  background-repeat: no-repeat
-  background-attachment: fixed
-  background-size: cover
-
-.bottom-text3
-  font-size: 12px
-  color: #fff
-  font-family: 'hl'
-
-.twitter-logo
-  height: 20px
-  padding-right: 10px
-
-.img-list
-  padding-left: 0
-  margin-bottom: 10px
-
-.img-instagram
-  height: 56px
-  width: 56px
-  margin-top: 15px
-  margin-right: 10px
-  list-style: none
-  display: inline-flex
-  & img
-    height: 100%
-    width: 100%
-    object-fit: cover
-
-
-
-// Responsive Start
-@media (max-width: 1199px)
-  .product-title
-    font-size: 24px
-    padding-top: 5px
+  margin-top: 67px
+  width : 100%
+  height: 500px
 
 @media (max-width: 991px)
-  .slider
-    height: 50vh
+  .change.bgblue
+    left: 0
+
+  .change.bgmenu
+    opacity: 1
+    visibility: visible
+
+  .bgblue
+    position: fixed
+    top: 0
+    bottom: 0
+    left: -300px
+    z-index: 1
+    width: 300px !important
+    transition: 0.2s 
+    
+    li a
+      color: black !important
+
+  .bgmenu 
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    background-color: rgba(6, 6, 6, 0.56)
+    z-index: 1
+    opacity: 0
+    visibility: hidden
+    transition: 0.2s
   
-  .bantext
-    font-size: 22px
-
-  .secban-item img
-    top: 60%
-    left: 50%
-    transform: translateX(-50%)
-
-  .secban-title
-    position: absolute
-    top: 7%
-    left: 7%
-    width: 85%
-
-  .text
-    padding-left: 75px
-    padding-right: 75px
-
-  .product-img
-    height: 200px
-
-  .product-text
-    font-size: 10px
-
-  .product-title
-    font-size: 14px
-
-  .promo-banner
-    height: 120px
-
-  .promo-title
-    font-size: 12px
-
-  .product-title
-    padding-top: 20px
-
-  .form-box
-    margin: 50px 0
-  
-  .nav-item a,
-  .dropdown-item
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+  .flexbox
+    flex-wrap: wrap-reverse
 
 @media (max-width: 767px)
-  .slider
-    height: 100vh
-  
-  .next
-    width: 40px
-    height: 40px
-    &:before
-      content: ""
-      width: 15px
-      height: 15px
-      border-bottom: 3px solid #fff
-      border-right: 3px solid #fff
-  
-  .prev
-    width: 40px
-    height: 40px
-    &:before
-      content: ""
-      width: 15px
-      height: 15px
-      border-bottom: 3px solid #fff
-      border-left: 3px solid #fff
-
-  .bantext
-    left: 39%
-    top: 30%
-    transform: translateX(-55%)
-
-  .title
-    font-size: 14px
-
-  .promo-banner
-    height: 190px
-
-  .promo-title
-    font-size: 14px
-  
-  .nav-item a,
-  .dropdown-item
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
-
-  .product-title
-    padding-top: 20px
-
-@media (max-width: 575px)
-  .bantext
-    top: 70%
-    font-size: 30px
-    text-align: center
-    left: 50%
-    transform: translateX(-50%)
-    width: 100%
-
-  .secban-title
-    top: 5%
-    left: 0
-    color: #fff
-    width: 100%
-    padding: 0 15px
-
-  .secban-item img
-    top: 75%
-    left: 50%
-    height: 15%
-
-  .product-img
-    height: 300px
-
-  .bg-product
-    margin-top: 60px
-
-  .text
-    padding-left: 0
-    padding-right: 0
-    font-size: 16px
-    padding-bottom: 2rem
-
-  .form-title
-    padding-top: 20px
-    font-size: 18px
-
-  .img-instagram
-    margin-right: 2px
-
-  .nav-item a,
-  .dropdown-item
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
-
-  #pwd
-    margin-top: 2rem
-
-  .main-title
-    font-size: 24px
-
-  .pb3
-    padding-bottom: 1rem
-
-  .product-title
-    padding-top: 20px
+  .flexbox
+    flex-wrap: wrap

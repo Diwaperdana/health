@@ -1,24 +1,21 @@
-$(document).ready(function() {
+$(document).ready(function () {
+
+  // Get started!
   $(".navbar-toggler").click(function () {
     $(".navbar").toggleClass("change");
   });
 
-  $('.slider').slick({
-    dots: true,
-    arrows: true,
-    nextArrow: '<i class="next"></i>',
-    prevArrow: '<i class="prev"></i>'
-  });
-  $(function () {
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop() > 50) {
-        $(".navbar").addClass("active");
-      } else {
-        //remove the background property so it comes transparent again (defined in your css)
-        $(".navbar").removeClass("active");
-      }
+  function containerwidth () {
+    var containerwidth = $(".container").innerWidth();
+    $(".bgblue").css({
+      width: containerwidth / 4,
     });
+  }
+  containerwidth ();
+  $(window).resize(function () {
+    containerwidth();
   });
 
 
+  
 });
