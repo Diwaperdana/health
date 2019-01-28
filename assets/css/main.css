@@ -8470,7 +8470,8 @@ h3.title {
 
 .page-link {
   color: #343a40; }
-  .page-link:focus {
-    box-shadow: 0 0 0 0.2rem rgba(70, 70, 70, 0.25); }
+  .page-link:focus, .page-link:hover {
+    box-shadow: none;
+    z-index: 0; }
 
 /*# sourceMappingURL=main.css.map */
